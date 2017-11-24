@@ -56,12 +56,16 @@ class ViewController: UIViewController {
         // Facultatif, Ajouter le panneau de control de la vidéo
         self.addChildViewController(playerViewController)
 
+        /// Démarrer un processus à la fin de la lecture
+        //  NotificationCenter.default.addObserver(self, selector: Selector(("chargerVideoLocale:")), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: player)
+        //
+        
         // Démarrer la vidéo
         player.play()
     } // chargerVideoÀPartirDuWeb
 
     // ****************************************************
-    func chargerVideoLocale() {
+    @objc func chargerVideoLocale() {
         let url = Bundle.main.url(forResource: "piano", withExtension: "m4v")!
         // Initialiser un lecteur de vidéo à partir d'une URL
         let player = AVPlayer(url: url)
