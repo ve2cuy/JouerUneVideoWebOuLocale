@@ -12,6 +12,7 @@
 		B5C5F8D61FC8A4FE003A4951 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C5F8D41FC8A4FE003A4951 /* Main.storyboard */; };
 		B5C5F8D81FC8A4FE003A4951 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5C5F8D71FC8A4FE003A4951 /* Assets.xcassets */; };
 		B5C5F8DB1FC8A4FE003A4951 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C5F8D91FC8A4FE003A4951 /* LaunchScreen.storyboard */; };
+		B5C5F8E31FC8AA25003A4951 /* piano.m4v in Resources */ = {isa = PBXBuildFile; fileRef = B5C5F8E21FC8A955003A4951 /* piano.m4v */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		B5C5F8D71FC8A4FE003A4951 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5C5F8DA1FC8A4FE003A4951 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5C5F8DC1FC8A4FE003A4951 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5C5F8E21FC8A955003A4951 /* piano.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = piano.m4v; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		B5C5F8CF1FC8A4FE003A4951 /* JouerUneVideoLocale */ = {
 			isa = PBXGroup;
 			children = (
+				B5C5F8E21FC8A955003A4951 /* piano.m4v */,
 				B5C5F8D01FC8A4FE003A4951 /* AppDelegate.swift */,
 				B5C5F8D21FC8A4FE003A4951 /* ViewController.swift */,
 				B5C5F8D41FC8A4FE003A4951 /* Main.storyboard */,
@@ -124,6 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5C5F8DB1FC8A4FE003A4951 /* LaunchScreen.storyboard in Resources */,
+				B5C5F8E31FC8AA25003A4951 /* piano.m4v in Resources */,
 				B5C5F8D81FC8A4FE003A4951 /* Assets.xcassets in Resources */,
 				B5C5F8D61FC8A4FE003A4951 /* Main.storyboard in Resources */,
 			);
