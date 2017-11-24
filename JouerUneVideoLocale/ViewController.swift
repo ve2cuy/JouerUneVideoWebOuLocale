@@ -41,32 +41,44 @@ class ViewController: UIViewController {
     // ****************************************************
     func chargerVideoÀPartirDuWeb() {
         let url = URL(string: "http://jplayer.org/video/m4v/Big_Buck_Bunny_Trailer.m4v")
+        // Initialiser un lecteur de vidéo à partir d'une URL
         let player = AVPlayer(url: url!)
+        // Créer une palette de contrôle vidéo
         let playerViewController = AVPlayerViewController()
+        // Associer la palette de contrôle vidéo au lecteur vidéo
         playerViewController.player = player
 
         // Ajuster la taille de la vidéo à celle de la view de présentation
         playerViewController.view.frame = viewStreamDuNet.bounds
+        // Présenter la palette de contrôle vidéo à l'écran
         viewStreamDuNet.addSubview(playerViewController.view)
 
         // Facultatif, Ajouter le panneau de control de la vidéo
         self.addChildViewController(playerViewController)
+
+        // Démarrer la vidéo
         player.play()
     } // chargerVideoÀPartirDuWeb
 
     // ****************************************************
     func chargerVideoLocale() {
         let url = Bundle.main.url(forResource: "piano", withExtension: "m4v")!
+        // Initialiser un lecteur de vidéo à partir d'une URL
         let player = AVPlayer(url: url)
+        // Créer une palette de contrôle vidéo
         let playerViewController = AVPlayerViewController()
+        // Associer la palette de contrôle vidéo au lecteur vidéo
         playerViewController.player = player
         
         // Ajuster la taille de la vidéo à celle de la view de présentation
         playerViewController.view.frame = viewStreamLocal.bounds
+        // Présenter la palette de contrôle vidéo à l'écran
         viewStreamLocal.addSubview(playerViewController.view)
         
         // Facultatif, Ajouter le panneau de control de la vidéo
         self.addChildViewController(playerViewController)
+
+        // Démarrer la vidéo
         player.play()
     } // chargerVideoLocale()
 
