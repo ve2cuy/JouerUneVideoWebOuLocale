@@ -1,3 +1,4 @@
+//  ===================================================================================
 //  Fichier:    ViewController.swift
 //  Projet:     JouerUneVideoLocale
 //  Auteur:     Alain Boudreault
@@ -60,6 +61,7 @@ class ViewController: UIViewController {
         let playerViewController = AVPlayerViewController()
         playerViewController.player = player
         
+        // Ajuster la taille de la vidéo à celle de la view de présentation
         playerViewController.view.frame = viewStreamLocal.bounds
         viewStreamLocal.addSubview(playerViewController.view)
         

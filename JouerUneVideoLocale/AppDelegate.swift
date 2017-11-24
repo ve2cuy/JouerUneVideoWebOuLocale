@@ -1,10 +1,23 @@
+//  ===================================================================================
+//  Fichier:    AppDelegate.swift
+//  Projet:     JouerUneVideoLocale
+//  Auteur:     Alain Boudreault
+//  Copyright:  17-11-24 © ve2cuy, All rights reserved.
+//  ===================================================================================
+//  NOTE: À l'usage exclusif des étudiants et étudiantes de
+//  Techniques d'Intégration Multimédia
+//  du cégep de Saint-Jérôme.
+//  ----------------------------------------------------------------------------------
+//  Il est interdit de reproduire, en tout ou en partie, à des fins commerciales,
+//  le code source, les scènes, les éléments graphiques, les classes et
+//  tout autre contenu du présent projet sans l’autorisation écrite de l'auteur.
 //
-//  AppDelegate.swift
-//  JouerUneVideoLocale
+//  Pour obtenir l’autorisation de reproduire ou d’utiliser, en tout ou en partie,
+//  le présent projet, veuillez communiquer avec:
 //
-//  Created by Alain on 17-11-24.
-//  Copyright © 2017 Alain. All rights reserved.
+//  Alain Boudreault, aboudrea@cstj.qc.ca, ve2cuy.wordpress.com, ve2cuy @ github
 //
+//  ===================================================================================
 
 import UIKit
 
