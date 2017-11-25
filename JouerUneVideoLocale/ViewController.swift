@@ -47,7 +47,7 @@ class ViewController: UIViewController {
     /**
     Cette méthode a la mauvaise habitude de soliciter le web
     ou le bundle local pour localiser une vidéo dans le
-    but de la présenter dans un des UIViews du projet.
+    but de la présenter dans une des UIViews du projet.
     - Author:
     Alain Boudreault
      
