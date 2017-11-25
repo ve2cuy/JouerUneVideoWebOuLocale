@@ -45,7 +45,6 @@ class ViewController: UIViewController {
  
     // ****************************************************
     func chargerVideo(uneURL:URL, uneView:UIView) {
-        // let url = URL(string: uneURL)
         // Initialiser un lecteur de vidéo à partir d'une URL
         let player = AVPlayer(url: uneURL)
         // Créer une palette de contrôle vidéo
@@ -55,7 +54,7 @@ class ViewController: UIViewController {
         
         // Ajuster la taille de la vidéo à celle de la view de présentation
         playerViewController.view.frame = uneView.bounds
-        // Présenter la palette de contrôle vidéo à l'écran
+        // Présenter le vidéo player à l'écran
         uneView.addSubview(playerViewController.view)
         
         // Facultatif, Ajouter le panneau de control de la vidéo
