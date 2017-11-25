@@ -18,6 +18,10 @@
 //  Alain Boudreault, aboudrea@cstj.qc.ca, ve2cuy.wordpress.com, ve2cuy @ github
 //
 //  ===================================================================================
+//
+//  Référence sur 'xcode_markup'
+//  https://developer.apple.com/library/content/documentation/Xcode/Reference/xcode_markup_formatting_ref/index.html#//apple_ref/doc/uid/TP40016497-CH2-SW1
+//  ===================================================================================
 
 // Importation des librairies
 import UIKit
