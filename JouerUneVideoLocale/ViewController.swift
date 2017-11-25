@@ -28,7 +28,7 @@ class ViewController: UIViewController {
 
     // Définition des constantes
     let urlVideoWeb     = URL(string:"http://jplayer.org/video/m4v/Big_Buck_Bunny_Trailer.m4v")!
-    let urlVideoLocale  = Bundle.main.url(forResource: "piano", withExtension: "m4v")!
+    let urlVideoLocale  = Bundle.main.url(forResource: "piano", withExtension: "m4v")!  // Utiliser: Bundle.main.url pour un fichier local.
     
     // Définition des liens MVC
     @IBOutlet weak var viewStreamDuNet: UIView!
