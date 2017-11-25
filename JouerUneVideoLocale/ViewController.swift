@@ -26,6 +26,10 @@ import AVKit
 // ****************************************************
 class ViewController: UIViewController {
 
+    // Définition des constantes
+    let urlVideoWeb     = URL(string:"http://jplayer.org/video/m4v/Big_Buck_Bunny_Trailer.m4v")!
+    let urlVideoLocale  = Bundle.main.url(forResource: "piano", withExtension: "m4v")!
+    
     // Définition des liens MVC
     @IBOutlet weak var viewStreamDuNet: UIView!
     @IBOutlet weak var viewStreamLocal: UIView!
@@ -33,58 +37,33 @@ class ViewController: UIViewController {
     // ****************************************************
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        chargerVideoÀPartirDuWeb()
-        chargerVideoLocale()
+        // Jouer une vidéo à partir du web
+        chargerVideo(uneURL: urlVideoWeb, uneView: viewStreamDuNet)
+        // Jouer une vidéo locale
+        chargerVideo(uneURL: urlVideoLocale, uneView: viewStreamLocal)
     } // viewDidLoad()
  
     // ****************************************************
-    func chargerVideoÀPartirDuWeb() {
-        let url = URL(string: "http://jplayer.org/video/m4v/Big_Buck_Bunny_Trailer.m4v")
+    func chargerVideo(uneURL:URL, uneView:UIView) {
+        // let url = URL(string: uneURL)
         // Initialiser un lecteur de vidéo à partir d'une URL
-        let player = AVPlayer(url: url!)
+        let player = AVPlayer(url: uneURL)
         // Créer une palette de contrôle vidéo
         let playerViewController = AVPlayerViewController()
         // Associer la palette de contrôle vidéo au lecteur vidéo
         playerViewController.player = player
-
+        
         // Ajuster la taille de la vidéo à celle de la view de présentation
-        playerViewController.view.frame = viewStreamDuNet.bounds
+        playerViewController.view.frame = uneView.bounds
         // Présenter la palette de contrôle vidéo à l'écran
-        viewStreamDuNet.addSubview(playerViewController.view)
-
+        uneView.addSubview(playerViewController.view)
+        
         // Facultatif, Ajouter le panneau de control de la vidéo
         self.addChildViewController(playerViewController)
-
-        /// Démarrer un processus à la fin de la lecture
-        //  NotificationCenter.default.addObserver(self, selector: Selector(("chargerVideoLocale:")), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: player)
-        //
         
         // Démarrer la vidéo
         player.play()
     } // chargerVideoÀPartirDuWeb
-
-    // ****************************************************
-    @objc func chargerVideoLocale() {
-        let url = Bundle.main.url(forResource: "piano", withExtension: "m4v")!
-        // Initialiser un lecteur de vidéo à partir d'une URL
-        let player = AVPlayer(url: url)
-        // Créer une palette de contrôle vidéo
-        let playerViewController = AVPlayerViewController()
-        // Associer la palette de contrôle vidéo au lecteur vidéo
-        playerViewController.player = player
-        
-        // Ajuster la taille de la vidéo à celle de la view de présentation
-        playerViewController.view.frame = viewStreamLocal.bounds
-        // Présenter la palette de contrôle vidéo à l'écran
-        viewStreamLocal.addSubview(playerViewController.view)
-        
-        // Facultatif, Ajouter le panneau de control de la vidéo
-        self.addChildViewController(playerViewController)
-
-        // Démarrer la vidéo
-        player.play()
-    } // chargerVideoLocale()
 
 } // ViewController
 
