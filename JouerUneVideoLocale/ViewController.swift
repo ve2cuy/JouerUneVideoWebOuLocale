@@ -43,7 +43,18 @@ class ViewController: UIViewController {
         chargerVideo(uneURL: urlVideoLocale, uneView: viewStreamLocal)
     } // viewDidLoad()
  
-    // ****************************************************
+    // Voici un exemple de documentation en ligne:
+    /**
+    Cette méthode a la mauvaise habitude de soliciter le web
+    ou le bundle local pour localiser une vidéo dans le
+    but de la présenter dans un des UIViews du projet.
+    - Author:
+    Alain Boudreault
+     
+     - parameters:
+        - uneURL: lien vers la vidéo
+        - uneView: lien vers la UIView qui présentera la vidéo
+    */
     func chargerVideo(uneURL:URL, uneView:UIView) {
         // Initialiser un lecteur de vidéo à partir d'une URL
         let player = AVPlayer(url: uneURL)
