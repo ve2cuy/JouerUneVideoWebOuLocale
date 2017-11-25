@@ -22,6 +22,17 @@
 //  Référence sur 'xcode_markup'
 //  https://developer.apple.com/library/content/documentation/Xcode/Reference/xcode_markup_formatting_ref/index.html#//apple_ref/doc/uid/TP40016497-CH2-SW1
 //  ===================================================================================
+//
+//  Extrait:
+//
+//     Ceci vient d'où?
+/*
+      GOOD FOOD
+      At the
+      Peoples Grill (both)
+      SHORT ORDER &
+      REGULAR MEALS
+*/
 
 // Importation des librairies
 import UIKit
