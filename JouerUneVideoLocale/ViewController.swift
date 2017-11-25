@@ -52,7 +52,7 @@ class ViewController: UIViewController {
     Alain Boudreault
      
      - parameters:
-        - uneURL: lien vers la vidéo
+        - uneURL:  lien vers la vidéo
         - uneView: lien vers la UIView qui présentera la vidéo
     */
     func chargerVideo(uneURL:URL, uneView:UIView) {
